@@ -81,7 +81,8 @@ The paper demonstrates that *continuous-time chaotic systems* can achieve comple
    - 78% of nodes participate in >3 computation paths  
    - Each parameter used 4.2× more frequently  
 
-**Architectural Implication**:  
+**Architectural Implication**:
+
 "*Looped topologies create implicit depth without parameter overhead*"
 (Original paper: Section 4.3)
 
@@ -91,21 +92,21 @@ transition: fade-out
 
 # Literature Review III: Hyper-Connections Network
 
-## ByteDance's Hyper-Connections (ICLR 2025)
+## ByteDance's Dynamic Pathway Optimization
 
-<div h-5 />
+**Core Idea**:  
+Replaces fixed residual connections with *learnable cross-layer weights* (α, β)
 
-- **Architectural Innovation**:
-  - Memory-preserving node updates:
-    ```python
-    def node_update(x, h_prev):
-        gate = σ(W_g * [x, h_prev])
-        h_new = gate * f(x) + (1-gate) * h_prev
-        return h_new
-    ```
-- **Performance Gains**:
-  - 23%↑ in long-sequence processing
-  - 41%↓ in catastrophic forgetting
+**Key Findings**:  
+1. **Longer paths = better utilization**  
+   - 56% fewer effective parameters  
+   - 1.8x faster convergence
+2. **Emergent parallel processing**  
+   - Self-organizing Λ-shaped pathways  
+   - Eliminates gradient-collapse tradeoff  
+
+*Validates pathway engineering > parameter scaling*
+
 
 ---
 transition: fade-out
