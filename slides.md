@@ -114,16 +114,20 @@ transition: fade-out
 
 # Experimental Validation I: RWKV Pathway Engineering
 
-## Depth-Extension Experiment
-- **Method**:
-  - Layer duplication with residual bypass
-  - Rotary position encoding adaptation
-- **Results**:
-  - Math Reasoning: 58.7 → 72.3 (MATH benchmark)
-  - Code Generation: 31.2% → 44.8% (HumanEval)
-- **Implications**:
-  - Cyclic dataflow enhances computation density
-  - Path redundancy ≠ Parameter redundancy
+<div flex flex-auto space-x-4 flex-nowarp>
+<div max-w-110>
+
+Our investigation employed heuristic search methodologies to probe the structural optimization space of RWKV models under training-free constraints.
+
+![rwkv](./assets/rwkv.png){.w100}
+
+</div>
+<div>
+
+![rwkv-mmlu](./assets/rwkv-mmlu.jpg){.w100}
+![rwkv-arc](./assets/rwkv-arc.png){.w100}
+</div>
+</div>
 
 ---
 transition: fade-out
