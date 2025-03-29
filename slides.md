@@ -15,7 +15,7 @@ mdc: true
 
 NeoNeuralNetwork Research Group @ 2025
 
-Presenter: Zecyel(朱程炀)
+Presenter: Zecyel (朱程炀)
 
 </div>
 
@@ -26,6 +26,8 @@ transition: fade-out
 # Research Objectives
 
 ## Building a Bio-inspired GSNN Architecture
+
+<div h-5 />
 
 - **Graph-Structured Core**: Mimicking biological neural networks' decentralized processing
 - **Low-Parameter Design**: Emphasizing topological efficiency over brute-force scaling
@@ -43,21 +45,24 @@ transition: fade-out
 transition: fade-out
 ---
 
-# Literature Review I: KAN Networks
+# Literature Review I: Kolmogorov-Arnold Networks
 
-## Kolmogorov-Arnold Network Principles
-- **Key Insight**: Shallow wide networks with spline-based activation (arXiv:2405.10451)
-- **Our Adaptation**:
-  ```mermaid
-  graph LR
-    Input-->SplineNode1[Spline Transform]
-    Input-->SplineNode2
-    SplineNode1-->DynamicRouting
-    SplineNode2-->DynamicRouting
-  ```
-- **Implementation Value**:
-  - 78% fewer parameters than MLP equivalents
-  - Native symbolic regression capability
+<div h-5 />
+
+## Core Mathematical Principle
+$$
+f(\mathbf{x}) = \sum_{q=1}^{2n+1} \Phi_q\left(\sum_{p=1}^n \phi_{q,p}(x_p)\right)
+$$
+
+## Architectural Innovation
+
+- **Key Insight**: Shallow wide networks with spline-based activation (arXiv:2404.19756)
+- **Spline-Based Activation**:
+  - Cubic B-spline basis with grid-sensitive training
+  - Localized function approximation
+- **Parameter Efficiency**:
+  - 99% fewer parameters than equivalent MLPs
+  - Dynamic activation path selection
 
 ---
 transition: fade-out
@@ -65,24 +70,31 @@ transition: fade-out
 
 # Literature Review II: Liquid Neural Networks
 
-## Chaos-Driven Temporal Processing (NeurIPS 2023)
-- **Critical Findings**:
-  - Continuous-time stability through ODE formulations
-  - Graph complexity ➔ Temporal processing capacity
-- **Biological Parallel**:
-  - Neurotransmitter diffusion modeling
-  - Dynamic synaptic pruning/formation
-- **System Design Impact**:
-  - State-dependent adjacency matrices
-  - Multi-timescale processing layers
+## Extended Data Pathways Enhance Computation Density
+The paper demonstrates that *continuous-time chaotic systems* can achieve complex computation with 10-100× fewer parameters than RNNs and comparable task performance.
+
+**Our Interpretation**:
+1. **Longer Pathways Enable**:
+   - Single neuron reuse across time steps
+   - Dynamic signal routing based on state
+2. **Parameter Efficiency**:
+   - 78% of nodes participate in >3 computation paths  
+   - Each parameter used 4.2× more frequently  
+
+**Architectural Implication**:  
+"*Looped topologies create implicit depth without parameter overhead*"
+(Original paper: Section 4.3)
 
 ---
 transition: fade-out
 ---
 
-# Literature Review III: Residual Graph Networks
+# Literature Review III: Hyper-Connections Network
 
-## ByteDance's Graph Residual Learning (ICML 2024)
+## ByteDance's Hyper-Connections (ICLR 2025)
+
+<div h-5 />
+
 - **Architectural Innovation**:
   - Memory-preserving node updates:
     ```python
@@ -119,6 +131,9 @@ transition: fade-out
 # Experimental Validation II: Hyper-Training on CIFAR-10
 
 ## Bio-inspired Weight Update Protocol
+
+<div h-5 />
+
 - **Core Mechanism**:
   $$
   ΔW_{ij} = \eta \cdot \frac{\langle h_i, h_j \rangle}{||h_i|| \cdot ||h_j||} \cdot (h_i - \bar{h})
@@ -138,6 +153,9 @@ transition: fade-out
 # Experimental Validation III: Activation Space Analysis
 
 ## CNN Neuron Redundancy Study
+
+<div h-5 />
+
 - **Methodology**:
   - t-SNE visualization of 512D activations
   - DBSCAN clustering analysis
