@@ -23,6 +23,44 @@ Presenter: Zecyel (朱程炀)
 transition: fade-out
 ---
 
+# Fundamental Challenges in Current LLMs
+
+## Architectural Limitations in Modern Foundation Models
+
+<div h-5 />
+
+<div flex flex-auto space-x-4 flex-nowarp>
+<div max-w-110>
+
+1. **Tool Utilization Deficiency**
+   - Static API binding protocols
+   - No dynamic tool composition ability
+   - 72% failure rate in multi-step tool chaining (Google, 2024)
+
+2. **Multimodal Integration Barriers**
+   - Modality projection bottlenecks
+   - Cross-modal attention collapse
+   - Information loss during fusion
+
+</div>
+<div>
+
+3. **Knowledge Representation Crisis**
+   - Parametric memorization inefficiency
+   - 1 parameter ≈ 2bit information (Physics of LLMs theory)
+   - Catastrophic forgetting during updates
+
+4. **Structural Rigidity**
+   - Fixed topological organization
+   - No self-modification capability
+
+</div>
+</div>
+
+---
+transition: fade-out
+---
+
 # Research Objectives
 
 ## Building a Bio-inspired GSNN Architecture
@@ -218,30 +256,6 @@ transition: fade-out
 
 </div>
 </div>
-
----
-transition: fade-out
----
-
-# Theoretical Framework
-
-## Structure-Parameter Co-Evolution Thesis
-
-1. **Dynamic Architecture**:
-   - Self-modifying graph topology
-   - Node splitting/merging protocols
-
-2. **Meta-Learning Strategy**:
-   ```python
-   def meta_update(network, experience):
-       structural_grad = compute_structural_grad(experience)
-       network.adj_matrix += η * structural_grad
-       network.apply_hyper_train(experience)
-   ```
-
-3. **Biological Plausibility**:
-   - Simulated neurogenesis
-   - Resource-constrained growth
 
 ---
 transition: fade-out
