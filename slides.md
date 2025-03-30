@@ -124,8 +124,8 @@ Our investigation employed heuristic search methodologies to probe the structura
 </div>
 <div>
 
-![rwkv-mmlu](./assets/rwkv-mmlu.jpg){.w100}
-![rwkv-arc](./assets/rwkv-arc.png){.w100}
+![rwkv-mmlu](./assets/rwkv-mmlu.jpg){.w95}
+![rwkv-arc](./assets/rwkv-arc.png){.w95}
 </div>
 </div>
 
@@ -161,6 +161,37 @@ transition: fade-out
 ## Hyper-Training Performance Metrics
 
 ![hyper-train](./assets/hyper-train.jpg)
+
+---
+transition: fade-out
+---
+
+# Experimental Validation II: Hyper-Training on CIFAR
+
+## Hyperparameter Optimization
+
+<div flex flex-auto space-x-25 flex-nowarp>
+<div max-w-110>
+
+<div h-5 />
+
+- **Key Findings**:
+  - **Sweet Spot**: batch_size=40, learning_rate=0.1
+
+- **Biological Interpretation**:
+  - Smaller batches mimic biological "mini-batches"
+  - High LR enables rapid synaptic plasticity
+
+</div>
+<div>
+
+![hyper-parameter](./assets/hyper-parameter.png){.w70}
+
+</div>
+</div>
+
+
+
 ---
 transition: fade-out
 ---
