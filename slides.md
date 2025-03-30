@@ -23,6 +23,23 @@ Presenter: Zecyel (朱程炀)
 transition: fade-out
 ---
 
+# Table of Content
+
+1. Fundamental Challenges in Current LLMs
+2. Research Objectives
+3. Literature Review I: Kolmogorov-Arnold Networks
+4. Literature Review II: Liquid Neural Networks
+5. Literature Review II: Hyper-Connections Network
+6. Experimental Validation I: RWKV Pathway Engineering
+7. Experimental Validation II: Hyper-Training on CIFAR
+8. Experimental Validation III: CNN Redundancy Analysis
+9. Future Roadmap
+
+
+---
+transition: fade-out
+---
+
 # Fundamental Challenges in Current LLMs
 
 ## Architectural Limitations in Modern Foundation Models
@@ -263,17 +280,37 @@ transition: fade-out
 
 # Future Roadmap
 
-## Towards Self-Improving GSNN Systems
+## Towards Graph Neural Architectures
 
-1. **Phase 1**: Structural Primitive Implementation
-   - Dynamic edge formation protocols
-   - Multi-resolution graph partitioning
+<div h-5 />
 
-2. **Phase 2**: Meta-Learning Integration
-   - Architecture search via neural plasticity rules
-   - Energy-constrained optimization
+<div flex flex-auto space-x-10 flex-nowarp>
+<div max-w-115>
 
-3. **Phase 3**: Full Cognitive Architecture
-   - Episodic memory banks
-   - Tool manipulation API
-```
+1. **Multimodal Expansion**  
+   - Hidden state augmentation for speech-text fusion  
+   - Cross-modal attention through shared graph space  
+
+2. **Tool-Oriented LLM**  
+   - Dynamic API binding via graph edges  
+   - Self-discovered tool composition patterns  
+
+</div>
+<div>
+
+3. **Macroscopic Graph Networks**  
+   - Vector neurons with tensor edges  
+   - Emergent subgraph specialization  
+
+4. **Ablation Roadmap**  
+   - Phase 1: Isolated component validation
+   - Phase 2: Pairwise integration tests
+   - Phase 3: Full system optimization
+</div>
+</div>
+
+---
+class: text-center font-size-20 mt-45
+---
+
+Thanks for listening.
