@@ -133,24 +133,34 @@ Our investigation employed heuristic search methodologies to probe the structura
 transition: fade-out
 ---
 
-# Experimental Validation II: Hyper-Training on CIFAR-10
+# Experimental Validation II: Hyper-Training on CIFAR
 
 ## Bio-inspired Weight Update Protocol
 
-<div h-5 />
-
 - **Core Mechanism**:
   $$
-  ΔW_{ij} = \eta \cdot \frac{\langle h_i, h_j \rangle}{||h_i|| \cdot ||h_j||} \cdot (h_i - \bar{h})
+  \begin{aligned}
+  \Delta W_{in_i} &= \eta \cdot \frac{\langle \Delta a_i, z_{n_i} \rangle}{\langle z_{n_i}, z_{n_i} \rangle} \\
+  where \space\space\space
+  \Delta a_i &= a_i - a_{i_{expect}}\\
+  n_i &= \argmax_{i\in \mathbf{Neural}}\frac{\langle \Delta a_i, z_{n_i} \rangle}{||\Delta a_i||\cdot||z_{n_i}||}
+  \end{aligned}
   $$
   Where:
-  - $h_i$: Neuron activation vector
-  - $\bar{h}$: Layer mean activation
-  
-- **Performance**:
-  - 92.4% accuracy vs. 89.1% baseline
-  - 3.2× faster convergence
+  - $z_i$: Neuron activation vector
+  - $a_i$: Network output layer
 
+  Each neuron's activation is represented as a batch-sized vector. Batchsize is regarded as a hyperparameter in this experiment.
+
+---
+transition: fade-out
+---
+
+# Experimental Validation II: Hyper-Training on CIFAR
+
+## Hyper-Training Performance Metrics
+
+![hyper-train](./assets/hyper-train.jpg)
 ---
 transition: fade-out
 ---
