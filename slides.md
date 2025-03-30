@@ -190,26 +190,34 @@ transition: fade-out
 </div>
 </div>
 
-
-
 ---
 transition: fade-out
 ---
 
-# Experimental Validation III: Activation Space Analysis
+# Experimental Validation III: CNN Redundancy Analysis
 
-## CNN Neuron Redundancy Study
+## PCA Visualization of CNN Neuron Space
 
-<div h-5 />
+<div flex flex-auto space-x-25 flex-nowarp>
+<div max-w-110>
 
-- **Methodology**:
-  - t-SNE visualization of 512D activations
-  - DBSCAN clustering analysis
-- **Findings**:
-  - 68.3% neurons in redundant clusters
-  - Hyper-training reduces redundancy by 41%
-- **Visualization**:
-  <!-- Add cluster comparison diagram here later -->
+<div h-10 />
+
+1. Pretrained CNN
+2. Forward & Record Activation
+3. Get Batch×Neuron Matrix
+4. Unit Normalization
+5. Concatenate Inverted Vectors
+6. PCA Transformation
+7. Redundancy Quantification
+
+</div>
+<div>
+
+![pca](./assets/pca.png){.w120}
+
+</div>
+</div>
 
 ---
 transition: fade-out
