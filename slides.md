@@ -30,7 +30,7 @@ transition: fade-out
 3. Core Hypotheses to Validate
 4. Literature Review I: Kolmogorov-Arnold Networks
 5. Literature Review II: Liquid Neural Networks
-6. Literature Review II: Hyper-Connections Network
+6. Literature Review III: Hyper-Connections Network
 7. Experimental Validation I: RWKV Pathway Engineering
 8. Experimental Validation II: Hyper-Training on CIFAR
 9. Experimental Validation III: CNN Redundancy Analysis
@@ -166,14 +166,13 @@ Our Interpretation:
 >
 > Dynamic signal routing based on state.
 - Parameter Efficiency
-> 78% of nodes participate in >3 computation paths.
+> Most of nodes participate in >3 computation paths.
 >
-> Each parameter used 4.2× more frequently.
+> Each parameter used more frequently.
 
 Architectural Implication:
 
 "*Looped topologies create implicit depth without parameter overhead*"
-(Original paper: Section 4.3)
 
 ---
 transition: fade-out
@@ -183,15 +182,15 @@ transition: fade-out
 
 ## ByteDance's Dynamic Pathway Optimization
 
-Core Idea:  
+Core Idea:
 Replaces fixed residual connections with *learnable cross-layer weights* (α, β)
 
-Key Findings:  
-- Longer paths = better utilization  
+Key Findings:
+- Longer paths = better utilization
 > 56% fewer effective parameters.
 >
 > 1.8x faster convergence.
-- Emergent parallel processing  
+- Emergent parallel processing
 > Self-organizing Λ-shaped pathways.
 >
 > Eliminates gradient-collapse tradeoff.
@@ -270,13 +269,13 @@ transition: fade-out
 <div h-5 />
 
 ### Key Findings
-  
+
   Sweet Spot: batch_size=40, learning_rate=0.1
 
 ### Biological Interpretation
-  
+
   Smaller batches mimic biological "mini-batches"
-  
+
   High LR enables rapid synaptic plasticity.
 
 </div>
@@ -329,22 +328,22 @@ transition: fade-out
 <div flex flex-auto space-x-10 flex-nowarp>
 <div max-w-115>
 
-1. Multimodal Expansion  
-   - Hidden state augmentation for speech-text fusion  
-   - Cross-modal attention through shared graph space  
+1. Multimodal Expansion
+   - Hidden state augmentation for speech-text fusion
+   - Cross-modal attention through shared graph space
 
-2. Tool-Oriented LLM  
-   - Dynamic API binding via graph edges  
-   - Self-discovered tool composition patterns  
+2. Tool-Oriented LLM
+   - Dynamic API binding via graph edges
+   - Self-discovered tool composition patterns
 
 </div>
 <div>
 
-3. Macroscopic Graph Networks  
-   - Vector neurons with tensor edges  
-   - Emergent subgraph specialization  
+3. Macroscopic Graph Networks
+   - Vector neurons with tensor edges
+   - Emergent subgraph specialization
 
-4. Ablation Roadmap  
+4. Ablation Roadmap
    - Phase 1: Isolated component validation
    - Phase 2: Pairwise integration tests
    - Phase 3: Full system optimization
